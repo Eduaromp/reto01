@@ -1,0 +1,118 @@
+/* -----------------
+Tabla de contenidos:
+--------------------
+1. Fuente ......................... 12
+2. Variables ...................... 16
+3. Estilos generales .............. 27
+4. Créditos ....................... 37
+-------------------- */
+
+
+/* ----- Fuente ----- */
+@import url("https://fonts.googleapis.com/css?family=Montserrat&display=swap");
+
+
+/* ----- Variables ----- */
+* {
+	--primary-font-family: 'Montserrat', sans-serif;
+	--body-bg-color: #212020;
+	--card-bg-color: #242323;
+	--text-color: #c2c2c2;
+	--fb-bg-color: #456da4;
+	--li-bg-color: #0984c6;
+	--ig-bg-color: #006184;
+	--lh-text: 22px;
+}
+
+
+/* ----------------------------- */
+/* ----- Estilos generales ----- */
+/* ----------------------------- */
+body {
+	font-family: var(--primary-font-family);
+	background-color: var(--body-bg-color);
+	color: var(--text-color);
+	line-height: var(--lh-text);
+	height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.content {
+	width: 350px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: space-between;
+	background-color: var(--card-bg-color);
+}
+
+img {
+	width: 150px;
+	border-radius: 50%;
+	padding: .5rem;
+}
+
+.container {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+}
+
+h4 {
+	width: 150px;
+	border-radius: 15px;
+	padding: 5px;
+	background-color: #1e1e1e;
+}
+
+.social {
+	width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+	background-color: #1e1e1e;
+	box-shadow: 0 25px 5px 5px #1e1e1e;
+	height: 50px;
+}
+
+i {
+	padding: 1rem;
+	font-size: 1.5rem;
+	cursor: pointer;
+	transition: .3s ease all;
+}
+
+i:nth-child(1) {
+	color: #76a6f6;
+}
+
+i:nth-child(2) {
+	color: #1184c8;
+}
+
+i:nth-child(3) {
+	color: #4a6e94;
+}
+
+i:hover {
+	color: #ffffff;
+	font-size: 2rem;
+}
+
+@media only screen and (max-width: 600px){
+	.social {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: space-between;
+	}
+}
+
+/* ------------------------
+Diseño: UIDesign Daily🎨
+Desarrollo: Frontend Club🔥
+--------------------------- */
